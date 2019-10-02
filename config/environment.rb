@@ -1,7 +1,7 @@
 require 'bundler'
 require 'rake'
 require 'active_record'
-Bundler.require
+# Bundler.require
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'db/development.db')
 require 'bundler/setup'
 require 'sinatra/activerecord'
@@ -14,3 +14,4 @@ ActiveRecord::Base.establish_connection(connection_details)
 ActiveRecord::Base.logger = nil
 # ActiveRecord::Base.logger = Logger.new(STDOUT)
 require_all 'app'
+
