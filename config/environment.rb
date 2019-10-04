@@ -14,4 +14,3 @@ ActiveRecord::Base.establish_connection(connection_details)
 ActiveRecord::Base.logger = nil
 # ActiveRecord::Base.logger = Logger.new(STDOUT)
 require_all 'app'
-

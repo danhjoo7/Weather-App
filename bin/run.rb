@@ -1,10 +1,11 @@
 require_relative '../config/environment'
+require_relative './cli.rb'
 
-CITIES = ["New York City", "Los Angeles", "Chicago", "San Francisco", 
-          "Seattle", "Houston", "Boston", "Washington D.C.", "Denver", "Austin",
-          "San Jose", "San Diego", "Minneapolis", "Atlanta","Philadelphia", "Dallas",
-          "Detroit", "Portland", "Miami", "Nashville", "Columbus", "Baltimore",
-          "Las Vegas", "Honolulu", "Oakland"] 
-
-# 
-CommandLineApplication.welcome
+new_cli = CommandLineApplication.new
+new_cli.welcome
+new_cli.choose_city
+new_cli.describe_city_weather
+new_cli.create_their_ratings
+new_cli.updated_avg_rating
+new_cli.delete_option
+new_cli.delete_again

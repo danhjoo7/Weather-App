@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_01_205815) do
+ActiveRecord::Schema.define(version: 2019_10_03_221304) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
@@ -18,8 +18,7 @@ ActiveRecord::Schema.define(version: 2019_10_01_205815) do
 
   create_table "forecasts", force: :cascade do |t|
     t.integer "temp"
-    t.string "humidity"
-    t.string "cloudiness"
+    t.integer "humidity"
     t.integer "user_id"
     t.integer "city_id"
   end
